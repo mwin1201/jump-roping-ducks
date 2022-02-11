@@ -61,7 +61,6 @@ const userController = {
     },
 
     // delete user by Id
-    // ADD MIDDLEWARE TO REMOVE USER THOUGHTS WHEN USER IS DELETED
     deleteUser({ params }, res) {
         User.findOneAndDelete({ _id: params.userId })
         .then(dbUserData => {

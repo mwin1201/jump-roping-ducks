@@ -79,8 +79,8 @@ const thoughtController = {
         });
     },
 
-    // create reply
-    createReply({ params, body }, res) {
+    // create reaction
+    createReaction({ params, body }, res) {
         Thought.findOneAndUpdate(
             {_id: params.thoughtId },
             { $push: { reactions: body }},
@@ -99,8 +99,8 @@ const thoughtController = {
         });
     },
 
-    // delete a reply
-    deleteReply({ params }, res) {
+    // delete a reaction
+    deleteReaction({ params }, res) {
         console.log(params);
         Thought.findOneAndUpdate(
             { _id: params.thoughtId },
