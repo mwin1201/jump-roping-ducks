@@ -4,6 +4,7 @@ const userController = {
     // get all Users
     getAllUsers(req, res) {
         User.find({})
+        .select("-__v")
         .then(dbUserData => res.json(dbUserData))
         .catch(err => {
             console.log(err);
@@ -14,7 +15,15 @@ const userController = {
     // get user by Id
     getUserById({ params }, res) {
         User.findOne({ _id: params.userId })
-        // need to populate the thought and friend data
+        .populate({
+            path: "friends",
+            select: "-__v"
+        })
+        .populate({
+            path: "thoughts",
+            select: "-__v"
+        })
+        .select("-__v")
         .then(dbUserData => {
             if (!dbUserData) {
                 res.status(404).json({ message: "No user found with this id" });
@@ -52,6 +61,7 @@ const userController = {
     },
 
     // delete user by Id
+    // ADD MIDDLEWARE TO REMOVE USER THOUGHTS WHEN USER IS DELETED
     deleteUser({ params }, res) {
         User.findOneAndDelete({ _id: params.userId })
         .then(dbUserData => {
