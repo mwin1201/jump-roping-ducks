@@ -25,7 +25,7 @@
   Email or message me with inquiries below
 
   ## Video
-  Watch a walkthrough video demonstrating the routes in action [HERE](https://drive.google.com/file/d/1Y7YunimtnMc6tO5U80VMjTHbvXHl7Ew2/view)
+  Watch a walkthrough video demonstrating the routes in action [HERE](https://drive.google.com/file/d/1Y7YunimtnMc6tO5U80VMjTHbvXHl7Ew2/view?usp=sharing)
   
   ## License
   Copyright (c) 2022 Max Winter. Licensed under the MIT license.
