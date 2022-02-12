@@ -28,7 +28,7 @@
   Watch a walkthrough video demonstrating the routes in action [HERE](https://drive.google.com/file/d/1Y7YunimtnMc6tO5U80VMjTHbvXHl7Ew2/view)
   
   ## License
-  Copyright (c) 2021 Max Winter. Licensed under the MIT license.
+  Copyright (c) 2022 Max Winter. Licensed under the MIT license.
   
   ## Questions
   Go to my **[GitHub profile](https://github.com/mwin1201)** to view other projects 
